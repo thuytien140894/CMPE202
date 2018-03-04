@@ -1,0 +1,689 @@
+# 3.31-full on Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz
+1.001985681,C0,Frontend_Bound,21.63,% Slots,This category represents slots fraction where the processor's Frontend undersupplies its Backend...,,,5.63,
+1.001985681,C0,Backend_Bound,39.85,% Slots,,,,5.63,
+1.001985681,C0,Backend_Bound.Memory_Bound,35.51,% Slots,This metric represents slots fraction the Memory subsystem within the Backend was a bottleneck...,,,5.63,
+1.001985681,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,70.21,% Stalls,This metric estimates how often the CPU was stalled without loads missing the L1 data cache...,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+1.001985681,C1,Backend_Bound,41.95,% Slots,,,,5.63,
+1.001985681,C1,Backend_Bound.Memory_Bound,34.22,% Slots,,,,5.63,
+1.001985681,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,67.01,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+1.001985681,C2,Backend_Bound,54.94,% Slots,,,,5.63,
+1.001985681,C2,Backend_Bound.Memory_Bound,18.64,% Slots,,,,5.63,
+1.001985681,C2,Backend_Bound.Core_Bound,36.29,% Slots,This metric represents slots fraction where Core non-memory issues were of a bottleneck...,,,5.63,<==
+1.001985681,C2-T1,Backend_Bound.Core_Bound.Divider,47.54,% Clocks,This metric represents cycles fraction where the Divider unit was active...,arith.divider_uops,,6.0,<==
+1.001985681,C2-T1,Backend_Bound.Core_Bound.Ports_Utilization,41.34,% Clocks,This metric estimates cycles fraction the CPU performance was potentially limited due to Core computation issues (non divider-related)...,,,5.59,
+1.001985681,C3,Frontend_Bound,23.13,% Slots,,,,5.62,
+1.001985681,C3,Backend_Bound,39.01,% Slots,,,,5.62,
+1.001985681,C3,Backend_Bound.Memory_Bound,32.75,% Slots,,,,5.62,
+1.001985681,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,79.91,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+2.023131787,C0,Frontend_Bound,34.82,% Slots,,,,5.88,
+2.023131787,C0,Bad_Speculation,5.74,% Slots,This category represents slots fraction wasted due to incorrect speculations...,,,5.88,
+2.023131787,C0,Backend_Bound,37.03,% Slots,,,,5.88,
+2.023131787,C0,Frontend_Bound.Frontend_Latency,35.76,% Slots,This metric represents slots fraction the CPU was stalled due to Frontend latency issues...,rs_events.empty_end,,5.87,
+2.023131787,C0,Backend_Bound.Memory_Bound,27.16,% Slots,,,,5.87,
+2.023131787,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,5.82,% Clocks,This metric represents cycles fraction the CPU was stalled due to instruction cache misses...,,,5.88,
+2.023131787,C0-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,13.25,% Clocks_Calculated,This metric represents cycles fraction the CPU was stalled due to Branch Resteers...,br_misp_retired.all_branches,,5.87,
+2.023131787,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,59.18,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+2.023131787,C0-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,8.07,% Clocks,,,,5.88,
+2.023131787,C0-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,12.72,% Clocks_Calculated,,br_misp_retired.all_branches,,5.87,
+2.023131787,C1,Frontend_Bound,27.47,% Slots,,,,5.87,
+2.023131787,C1,Backend_Bound,33.88,% Slots,,,,5.87,
+2.023131787,C1,Backend_Bound.Memory_Bound,45.97,% Slots,,,,5.87,
+2.023131787,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,63.83,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+2.023131787,C2,Backend_Bound,54.28,% Slots,,,,5.88,
+2.023131787,C2,Backend_Bound.Memory_Bound,12.09,% Slots,,,,5.87,
+2.023131787,C2,Backend_Bound.Core_Bound,42.19,% Slots,,,,5.87,<==
+2.023131787,C2-T1,Backend_Bound.Core_Bound.Divider,58.64,% Clocks,,arith.divider_uops,,5.88,<==
+2.023131787,C2-T1,Backend_Bound.Core_Bound.Ports_Utilization,47.19,% Clocks,,,,5.87,
+2.023131787,C3,Frontend_Bound,20.73,% Slots,,,,5.88,
+2.023131787,C3,Backend_Bound,42.62,% Slots,,,,5.88,
+2.023131787,C3,Backend_Bound.Memory_Bound,33.99,% Slots,,,,5.88,
+2.023131787,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,84.29,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.87,<==
+3.071767236,C0,Backend_Bound,61.31,% Slots,,,,6.1,
+3.071767236,C0,Retiring,20.48,% Slots,,,,6.1,
+3.071767236,C0,Backend_Bound.Memory_Bound,54.73,% Slots,,,,5.72,
+3.071767236,C0,Retiring.Microcode_Sequencer,6.99,% Slots,This metric represents slots fraction the CPU was retiring uops fetched by the Microcode Sequencer (MS) unit...,idq.ms_uops,,6.1,
+3.071767236,C0-T0,Frontend_Bound.Frontend_Latency.MS_Switches,4.67,% Clocks,This metric estimates the fraction of cycles when the CPU was stalled due to switches of uop delivery to the Microcode Sequencer (MS)...,idq.ms_switches,,5.72,
+3.071767236,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,80.98,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C0-T1,Frontend_Bound.Frontend_Latency.MS_Switches,4.96,% Clocks,,idq.ms_switches,,5.72,
+3.071767236,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,81.39,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C1,Backend_Bound,60.91,% Slots,,,,6.1,
+3.071767236,C1,Retiring,23.98,% Slots,,,,6.1,
+3.071767236,C1,Backend_Bound.Memory_Bound,57.16,% Slots,,,,5.72,
+3.071767236,C1,Retiring.Microcode_Sequencer,5.89,% Slots,,idq.ms_uops,,6.1,
+3.071767236,C1-T0,Frontend_Bound.Frontend_Latency.MS_Switches,4.28,% Clocks,,idq.ms_switches,,5.72,
+3.071767236,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,86.27,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C1-T1,Frontend_Bound.Frontend_Latency.MS_Switches,5.94,% Clocks,,idq.ms_switches,,5.72,
+3.071767236,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,82.42,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C2,Backend_Bound,62.02,% Slots,,,,6.1,
+3.071767236,C2,Retiring,30.17,% Slots,,,,6.1,
+3.071767236,C2,Backend_Bound.Memory_Bound,48.66,% Slots,,,,5.72,
+3.071767236,C2,Backend_Bound.Core_Bound,13.36,% Slots,,,,5.72,
+3.071767236,C2,Retiring.Microcode_Sequencer,5.76,% Slots,,idq.ms_uops,,6.1,
+3.071767236,C2-T0,Frontend_Bound.Frontend_Latency.MS_Switches,3.86,% Clocks,,idq.ms_switches,,5.72,
+3.071767236,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,84.28,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C2-T1,Frontend_Bound.Frontend_Latency.MS_Switches,4.18,% Clocks,,idq.ms_switches,,5.72,
+3.071767236,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,54.04,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C2-T1,Backend_Bound.Core_Bound.Divider,21.03,% Clocks,,arith.divider_uops,,5.72,
+3.071767236,C2-T1,Backend_Bound.Core_Bound.Ports_Utilization,33.43,% Clocks,,,,6.1,
+3.071767236,C3,Frontend_Bound,22.20,% Slots,,,,6.1,
+3.071767236,C3,Backend_Bound,44.32,% Slots,,,,6.1,
+3.071767236,C3,Frontend_Bound.Frontend_Latency,15.61,% Slots,,rs_events.empty_end,,6.1,
+3.071767236,C3,Backend_Bound.Memory_Bound,41.74,% Slots,,,,5.72,
+3.071767236,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,49.53,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+3.071767236,C3-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,7.04,% Clocks,,,,5.72,
+3.071767236,C3-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.49,% Clocks_Calculated,,br_misp_retired.all_branches,,5.86,
+3.071767236,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,92.95,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+4.279349414,C0,Backend_Bound,51.26,% Slots,,,,5.63,
+4.279349414,C0,Backend_Bound.Memory_Bound,45.82,% Slots,,,,5.63,
+4.279349414,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,55.53,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,73.00,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C1,Backend_Bound,61.00,% Slots,,,,5.63,
+4.279349414,C1,Backend_Bound.Memory_Bound,50.86,% Slots,,,,5.63,
+4.279349414,C1,Backend_Bound.Core_Bound,10.14,% Slots,,,,5.63,
+4.279349414,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,64.85,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,75.44,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C2,Backend_Bound,67.53,% Slots,,,,5.63,
+4.279349414,C2,Retiring,23.62,% Slots,,,,5.63,
+4.279349414,C2,Backend_Bound.Memory_Bound,59.25,% Slots,,,,5.63,
+4.279349414,C2,Retiring.Microcode_Sequencer,5.62,% Slots,,idq.ms_uops,,5.63,
+4.279349414,C2-T0,Frontend_Bound.Frontend_Latency.MS_Switches,3.95,% Clocks,,idq.ms_switches,,5.96,
+4.279349414,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,74.53,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C2-T1,Frontend_Bound.Frontend_Latency.MS_Switches,2.53,% Clocks,,idq.ms_switches,,5.96,
+4.279349414,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,71.81,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C3,Backend_Bound,71.59,% Slots,,,,5.63,
+4.279349414,C3,Retiring,19.42,% Slots,,,,5.63,
+4.279349414,C3,Backend_Bound.Memory_Bound,64.28,% Slots,,,,5.63,
+4.279349414,C3,Retiring.Microcode_Sequencer,6.26,% Slots,,idq.ms_uops,,5.63,
+4.279349414,C3-T0,Frontend_Bound.Frontend_Latency.MS_Switches,4.21,% Clocks,,idq.ms_switches,,5.96,
+4.279349414,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,80.91,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+4.279349414,C3-T1,Frontend_Bound.Frontend_Latency.MS_Switches,3.41,% Clocks,,idq.ms_switches,,5.96,
+4.279349414,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,77.12,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+5.447217798,C0,Backend_Bound,45.58,% Slots,,,,6.17,
+5.447217798,C0,Backend_Bound.Memory_Bound,35.43,% Slots,,,,5.82,
+5.447217798,C0,Backend_Bound.Core_Bound,10.15,% Slots,,,,5.82,
+5.447217798,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,45.56,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,52.72,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C1,Backend_Bound,41.35,% Slots,,,,6.17,
+5.447217798,C1,Backend_Bound.Memory_Bound,36.49,% Slots,,,,5.82,
+5.447217798,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,44.20,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,55.86,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C2,Backend_Bound,46.56,% Slots,,,,6.17,
+5.447217798,C2,Backend_Bound.Memory_Bound,37.50,% Slots,,,,5.82,
+5.447217798,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,44.85,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,52.33,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C3,Backend_Bound,41.00,% Slots,,,,6.17,
+5.447217798,C3,Backend_Bound.Memory_Bound,31.90,% Slots,,,,5.82,
+5.447217798,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,49.45,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+5.447217798,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,52.13,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+6.623894932,C0,Backend_Bound,44.28,% Slots,,,,5.78,
+6.623894932,C0,Backend_Bound.Memory_Bound,34.38,% Slots,,,,5.78,
+6.623894932,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,44.98,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,54.36,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C1,Backend_Bound,38.96,% Slots,,,,5.78,
+6.623894932,C1,Backend_Bound.Memory_Bound,33.27,% Slots,,,,5.78,
+6.623894932,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,42.80,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,52.30,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C2,Backend_Bound,40.59,% Slots,,,,5.78,
+6.623894932,C2,Backend_Bound.Memory_Bound,30.55,% Slots,,,,5.78,
+6.623894932,C2,Backend_Bound.Core_Bound,10.03,% Slots,,,,5.78,
+6.623894932,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,43.98,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,54.01,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C3,Backend_Bound,41.46,% Slots,,,,5.78,
+6.623894932,C3,Backend_Bound.Memory_Bound,31.26,% Slots,,,,5.78,
+6.623894932,C3,Backend_Bound.Core_Bound,10.20,% Slots,,,,5.78,
+6.623894932,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,43.59,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+6.623894932,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,53.27,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.78,<==
+7.825482718,C0,Backend_Bound,40.15,% Slots,,,,5.99,
+7.825482718,C0,Backend_Bound.Memory_Bound,34.25,% Slots,,,,5.66,
+7.825482718,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,44.09,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,51.54,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C1,Backend_Bound,43.64,% Slots,,,,5.99,
+7.825482718,C1,Backend_Bound.Memory_Bound,34.50,% Slots,,,,5.66,
+7.825482718,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,42.32,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,53.98,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C2,Backend_Bound,43.11,% Slots,,,,5.99,
+7.825482718,C2,Backend_Bound.Memory_Bound,33.42,% Slots,,,,5.66,
+7.825482718,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,44.86,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,53.74,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C3,Backend_Bound,40.66,% Slots,,,,5.99,
+7.825482718,C3,Backend_Bound.Memory_Bound,31.72,% Slots,,,,5.66,
+7.825482718,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,44.40,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+7.825482718,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,51.22,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.99,<==
+9.010958552,C0,Backend_Bound,43.35,% Slots,,,,5.74,
+9.010958552,C0,Backend_Bound.Memory_Bound,33.63,% Slots,,,,5.74,
+9.010958552,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,42.87,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,52.59,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C1,Backend_Bound,40.94,% Slots,,,,5.74,
+9.010958552,C1,Backend_Bound.Memory_Bound,30.62,% Slots,,,,5.74,
+9.010958552,C1,Backend_Bound.Core_Bound,10.32,% Slots,,,,5.74,
+9.010958552,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,42.11,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,53.93,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C2,Backend_Bound,40.93,% Slots,,,,5.74,
+9.010958552,C2,Backend_Bound.Memory_Bound,30.49,% Slots,,,,5.74,
+9.010958552,C2,Backend_Bound.Core_Bound,10.44,% Slots,,,,5.74,
+9.010958552,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,42.83,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,50.53,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C2-T1,Backend_Bound.Core_Bound.Ports_Utilization,20.95,% Clocks,,,,5.74,
+9.010958552,C3,Backend_Bound,40.51,% Slots,,,,5.74,
+9.010958552,C3,Backend_Bound.Memory_Bound,29.12,% Slots,,,,5.74,
+9.010958552,C3,Backend_Bound.Core_Bound,11.40,% Slots,,,,5.74,
+9.010958552,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,42.58,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,49.74,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.74,<==
+9.010958552,C3-T1,Backend_Bound.Core_Bound.Ports_Utilization,27.23,% Clocks,,,,5.74,
+10.330117708,C0,Backend_Bound,39.40,% Slots,,,,5.76,
+10.330117708,C0,Backend_Bound.Memory_Bound,30.50,% Slots,,,,5.76,
+10.330117708,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,39.59,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+10.330117708,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,49.50,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+10.330117708,C1,Backend_Bound,38.79,% Slots,,,,5.76,
+10.330117708,C1,Backend_Bound.Memory_Bound,30.69,% Slots,,,,5.76,
+10.330117708,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,38.19,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+10.330117708,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,50.10,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+10.330117708,C2,Backend_Bound,34.18,% Slots,,,,5.76,
+10.330117708,C2,Backend_Bound.Memory_Bound,25.10,% Slots,,,,5.76,
+10.330117708,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,38.90,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+10.330117708,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,47.51,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+10.330117708,C3,Backend_Bound,36.08,% Slots,,,,5.76,
+10.330117708,C3,Backend_Bound.Memory_Bound,30.63,% Slots,,,,5.76,
+10.330117708,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,40.05,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.06,<==
+10.330117708,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,45.72,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.07,<==
+11.567736344,C0,Backend_Bound,37.27,% Slots,,,,6.14,
+11.567736344,C0,Backend_Bound.Memory_Bound,27.87,% Slots,,,,5.82,
+11.567736344,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,39.15,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,46.17,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C1,Backend_Bound,38.91,% Slots,,,,6.14,
+11.567736344,C1,Backend_Bound.Memory_Bound,29.42,% Slots,,,,5.82,
+11.567736344,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,37.84,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,49.21,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C2,Backend_Bound,36.50,% Slots,,,,6.14,
+11.567736344,C2,Backend_Bound.Memory_Bound,27.47,% Slots,,,,5.82,
+11.567736344,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,38.92,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,46.93,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C3,Backend_Bound,32.69,% Slots,,,,6.14,
+11.567736344,C3,Backend_Bound.Memory_Bound,26.44,% Slots,,,,5.82,
+11.567736344,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,39.70,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+11.567736344,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,46.95,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.82,<==
+12.86527061,C0,Backend_Bound,42.00,% Slots,,,,5.86,
+12.86527061,C0,Backend_Bound.Memory_Bound,32.76,% Slots,,,,5.86,
+12.86527061,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,40.94,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,49.93,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C1,Backend_Bound,40.60,% Slots,,,,5.85,
+12.86527061,C1,Backend_Bound.Memory_Bound,30.01,% Slots,,,,5.85,
+12.86527061,C1,Backend_Bound.Core_Bound,10.59,% Slots,,,,5.85,
+12.86527061,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,39.15,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C1-T0,Backend_Bound.Core_Bound.Ports_Utilization,22.65,% Clocks,,,,5.86,
+12.86527061,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,50.96,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C2,Frontend_Bound,20.07,% Slots,,,,5.86,
+12.86527061,C2,Backend_Bound,34.00,% Slots,,,,5.86,
+12.86527061,C2,Backend_Bound.Memory_Bound,29.83,% Slots,,,,5.86,
+12.86527061,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,42.26,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,48.75,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C3,Backend_Bound,37.86,% Slots,,,,5.86,
+12.86527061,C3,Backend_Bound.Memory_Bound,28.40,% Slots,,,,5.86,
+12.86527061,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,40.30,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+12.86527061,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,49.36,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.86,<==
+14.021317642,C0,Backend_Bound,43.17,% Slots,,,,5.88,
+14.021317642,C0,Backend_Bound.Memory_Bound,32.94,% Slots,,,,5.88,
+14.021317642,C0,Backend_Bound.Core_Bound,10.23,% Slots,,,,5.88,
+14.021317642,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,41.14,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,50.27,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C1,Backend_Bound,41.62,% Slots,,,,5.88,
+14.021317642,C1,Backend_Bound.Memory_Bound,32.29,% Slots,,,,5.88,
+14.021317642,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,40.22,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,52.23,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C2,Backend_Bound,39.08,% Slots,,,,5.88,
+14.021317642,C2,Backend_Bound.Memory_Bound,31.81,% Slots,,,,5.88,
+14.021317642,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,49.45,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,49.09,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C3,Backend_Bound,41.76,% Slots,,,,5.88,
+14.021317642,C3,Backend_Bound.Memory_Bound,32.16,% Slots,,,,5.88,
+14.021317642,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,42.52,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+14.021317642,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,50.31,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.88,<==
+15.220320641,C0,Backend_Bound,40.86,% Slots,,,,5.67,
+15.220320641,C0,Backend_Bound.Memory_Bound,31.86,% Slots,,,,5.67,
+15.220320641,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,44.35,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+15.220320641,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,52.31,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+15.220320641,C1,Backend_Bound,37.84,% Slots,,,,5.67,
+15.220320641,C1,Backend_Bound.Memory_Bound,30.45,% Slots,,,,5.67,
+15.220320641,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,39.30,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+15.220320641,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,50.23,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+15.220320641,C2,Backend_Bound,39.72,% Slots,,,,5.67,
+15.220320641,C2,Backend_Bound.Memory_Bound,31.71,% Slots,,,,5.67,
+15.220320641,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,47.93,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.01,<==
+15.220320641,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,52.33,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.01,<==
+15.220320641,C3,Backend_Bound,42.25,% Slots,,,,5.67,
+15.220320641,C3,Backend_Bound.Memory_Bound,34.83,% Slots,,,,5.67,
+15.220320641,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,42.36,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+15.220320641,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,52.05,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.0,<==
+16.421317768,C0,Backend_Bound,37.07,% Slots,,,,5.99,
+16.421317768,C0,Backend_Bound.Memory_Bound,31.62,% Slots,,,,5.99,
+16.421317768,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,41.59,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,50.06,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C1,Backend_Bound,40.35,% Slots,,,,5.99,
+16.421317768,C1,Backend_Bound.Memory_Bound,31.01,% Slots,,,,5.99,
+16.421317768,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,38.47,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,50.54,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C2,Backend_Bound,42.08,% Slots,,,,5.99,
+16.421317768,C2,Backend_Bound.Memory_Bound,33.62,% Slots,,,,5.99,
+16.421317768,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,39.56,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,50.71,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C3,Backend_Bound,43.28,% Slots,,,,5.99,
+16.421317768,C3,Backend_Bound.Memory_Bound,33.89,% Slots,,,,5.99,
+16.421317768,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,39.12,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+16.421317768,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,50.76,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.66,<==
+17.589144231,C0,Backend_Bound,40.27,% Slots,,,,5.82,
+17.589144231,C0,Backend_Bound.Memory_Bound,30.59,% Slots,,,,5.82,
+17.589144231,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,41.13,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,48.83,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C1,Frontend_Bound,21.81,% Slots,,,,5.82,
+17.589144231,C1,Backend_Bound,29.62,% Slots,,,,5.82,
+17.589144231,C1,Backend_Bound.Memory_Bound,25.32,% Slots,,,,5.82,
+17.589144231,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,41.37,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,50.43,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C2,Backend_Bound,40.66,% Slots,,,,5.82,
+17.589144231,C2,Backend_Bound.Memory_Bound,32.20,% Slots,,,,5.82,
+17.589144231,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,38.59,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,49.39,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C3,Backend_Bound,40.11,% Slots,,,,5.82,
+17.589144231,C3,Backend_Bound.Memory_Bound,30.47,% Slots,,,,5.82,
+17.589144231,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,38.53,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+17.589144231,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,49.29,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.16,<==
+18.874529213,C0,Backend_Bound,37.68,% Slots,,,,5.91,
+18.874529213,C0,Backend_Bound.Memory_Bound,28.93,% Slots,,,,5.91,
+18.874529213,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,41.09,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,49.18,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C1,Backend_Bound,35.22,% Slots,,,,5.91,
+18.874529213,C1,Backend_Bound.Memory_Bound,29.04,% Slots,,,,5.91,
+18.874529213,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,41.31,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,46.23,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C2,Backend_Bound,37.04,% Slots,,,,5.91,
+18.874529213,C2,Backend_Bound.Memory_Bound,31.48,% Slots,,,,5.91,
+18.874529213,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,39.87,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,49.00,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C3,Backend_Bound,36.30,% Slots,,,,5.91,
+18.874529213,C3,Backend_Bound.Memory_Bound,27.94,% Slots,,,,5.91,
+18.874529213,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,39.57,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+18.874529213,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,49.82,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.6,<==
+20.195833685,C0,Backend_Bound,33.38,% Slots,,,,5.94,
+20.195833685,C0,Backend_Bound.Memory_Bound,27.30,% Slots,,,,5.75,
+20.195833685,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,37.66,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.05,<==
+20.195833685,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,46.14,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.05,<==
+20.195833685,C1,Backend_Bound,36.03,% Slots,,,,5.94,
+20.195833685,C1,Backend_Bound.Memory_Bound,26.09,% Slots,,,,5.75,
+20.195833685,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,38.72,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.05,<==
+20.195833685,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,48.15,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.05,<==
+20.195833685,C2,Backend_Bound,37.65,% Slots,,,,5.94,
+20.195833685,C2,Backend_Bound.Memory_Bound,28.49,% Slots,,,,5.75,
+20.195833685,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,38.14,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.06,<==
+20.195833685,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,47.65,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.06,<==
+20.195833685,C3,Backend_Bound,37.64,% Slots,,,,5.94,
+20.195833685,C3,Backend_Bound.Memory_Bound,29.95,% Slots,,,,5.75,
+20.195833685,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,37.75,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.05,<==
+20.195833685,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,48.05,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.05,<==
+21.394371956,C0,Backend_Bound,31.93,% Slots,,,,5.8,
+21.394371956,C0,Backend_Bound.Memory_Bound,26.66,% Slots,,,,5.8,
+21.394371956,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,40.23,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,48.20,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C1,Backend_Bound,33.24,% Slots,,,,5.8,
+21.394371956,C1,Backend_Bound.Memory_Bound,27.88,% Slots,,,,5.8,
+21.394371956,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,35.73,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,48.34,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C2,Backend_Bound,35.42,% Slots,,,,5.8,
+21.394371956,C2,Backend_Bound.Memory_Bound,29.04,% Slots,,,,5.8,
+21.394371956,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,38.31,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,46.49,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C3,Backend_Bound,35.82,% Slots,,,,5.8,
+21.394371956,C3,Backend_Bound.Memory_Bound,28.00,% Slots,,,,5.8,
+21.394371956,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,37.59,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+21.394371956,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,46.01,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.8,<==
+22.919946192,C0,Backend_Bound,27.06,% Slots,,,,6.03,
+22.919946192,C0,Backend_Bound.Memory_Bound,21.70,% Slots,,,,5.77,
+22.919946192,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,35.63,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,44.49,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C1,Backend_Bound,32.75,% Slots,,,,6.03,
+22.919946192,C1,Backend_Bound.Memory_Bound,24.62,% Slots,,,,5.77,
+22.919946192,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,31.32,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C1-T1,Backend_Bound.Memory_Bound.L1_Bound,44.22,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C2,Backend_Bound,31.05,% Slots,,,,6.03,
+22.919946192,C2,Backend_Bound.Memory_Bound,25.29,% Slots,,,,5.77,
+22.919946192,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,32.95,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,42.74,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C3,Frontend_Bound,20.16,% Slots,,,,6.03,
+22.919946192,C3,Backend_Bound,25.97,% Slots,,,,6.03,
+22.919946192,C3,Backend_Bound.Memory_Bound,21.90,% Slots,,,,5.77,
+22.919946192,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,37.70,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+22.919946192,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,45.02,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+24.223667764,C0,Frontend_Bound,22.43,% Slots,,,,5.83,
+24.223667764,C0,Backend_Bound,31.98,% Slots,,,,5.83,
+24.223667764,C0,Frontend_Bound.Frontend_Latency,16.75,% Slots,,rs_events.empty_end,,5.94,
+24.223667764,C0,Backend_Bound.Memory_Bound,28.17,% Slots,,,,5.83,
+24.223667764,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,7.82,% Clocks,,,,5.83,
+24.223667764,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,57.63,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+24.223667764,C0-T1,Backend_Bound.Memory_Bound.L1_Bound,101.30,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+24.223667764,C1,Backend_Bound,31.59,% Slots,,,,5.83,
+24.223667764,C1,Backend_Bound.Memory_Bound,24.61,% Slots,,,,5.83,<==
+24.223667764,C2,Frontend_Bound,23.12,% Slots,,,,5.83,
+24.223667764,C2,Backend_Bound,27.54,% Slots,,,,5.83,
+24.223667764,C2,Frontend_Bound.Frontend_Latency,15.31,% Slots,,rs_events.empty_end,,5.94,
+24.223667764,C2,Backend_Bound.Memory_Bound,25.85,% Slots,,,,5.82,
+24.223667764,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,6.99,% Clocks,,,,5.83,
+24.223667764,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,100.58,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+24.223667764,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,81.67,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+24.223667764,C3,Backend_Bound,36.11,% Slots,,,,5.84,
+24.223667764,C3,Backend_Bound.Memory_Bound,32.95,% Slots,,,,5.83,<==
+24.223667764,C3-T1,Backend_Bound.Memory_Bound.L1_Bound,61.97,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+25.319572733,C0,Frontend_Bound,32.61,% Slots,,,,5.84,
+25.319572733,C0,Bad_Speculation,5.28,% Slots,,,,5.84,
+25.319572733,C0,Backend_Bound,36.40,% Slots,,,,5.84,
+25.319572733,C0,Frontend_Bound.Frontend_Latency,32.97,% Slots,,rs_events.empty_end,,5.84,
+25.319572733,C0,Backend_Bound.Memory_Bound,41.72,% Slots,,,,5.84,<==
+25.319572733,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,9.98,% Clocks,,,,6.07,
+25.319572733,C0-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,9.61,% Clocks_Calculated,,br_misp_retired.all_branches,,5.83,
+25.319572733,C0-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.73,% Clocks_Calculated,,br_misp_retired.all_branches,,5.83,
+25.319572733,C1,Frontend_Bound,23.44,% Slots,,,,5.84,
+25.319572733,C1,Backend_Bound,34.30,% Slots,,,,5.84,
+25.319572733,C1,Backend_Bound.Memory_Bound,20.97,% Slots,,,,5.84,<==
+25.319572733,C1,Backend_Bound.Core_Bound,13.33,% Slots,,,,5.84,
+25.319572733,C1-T1,Backend_Bound.Core_Bound.Ports_Utilization,23.59,% Clocks,,,,5.84,
+25.319572733,C2,Frontend_Bound,28.09,% Slots,,,,5.84,
+25.319572733,C2,Backend_Bound,34.25,% Slots,,,,5.84,
+25.319572733,C2,Frontend_Bound.Frontend_Latency,20.83,% Slots,,rs_events.empty_end,,5.83,
+25.319572733,C2,Backend_Bound.Memory_Bound,33.22,% Slots,,,,5.84,
+25.319572733,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,5.73,% Clocks,,,,6.07,
+25.319572733,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,59.36,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.84,<==
+25.319572733,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,9.39,% Clocks,,,,6.07,
+25.319572733,C2-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,10.57,% Clocks_Calculated,,br_misp_retired.all_branches,,5.83,
+25.319572733,C2-T1,Frontend_Bound.Frontend_Latency.MS_Switches,5.54,% Clocks,,idq.ms_switches,,6.08,
+25.319572733,C2-T1,Backend_Bound.Memory_Bound.Store_Bound,21.98,% Stalls,This metric estimates how often CPU was stalled due to store memory accesses...,mem_uops_retired.all_stores:pp,,5.84,
+25.319572733,C3,Backend_Bound,34.49,% Slots,,,,5.84,
+25.319572733,C3,Backend_Bound.Memory_Bound,25.37,% Slots,,,,5.84,<==
+26.392943001,C0,Backend_Bound,32.92,% Slots,,,,5.97,
+26.392943001,C0,Backend_Bound.Memory_Bound,30.87,% Slots,,,,5.58,
+26.392943001,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,25.54,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+26.392943001,C0-T1,Backend_Bound.Memory_Bound.Store_Bound,32.70,% Stalls,,mem_uops_retired.all_stores:pp,,5.96,<==
+26.392943001,C1,Frontend_Bound,36.94,% Slots,,,,5.97,
+26.392943001,C1,Backend_Bound,44.94,% Slots,This category represents slots fraction where no uops are being delivered due to a lack of required resources for accepting new uops in the Backend...,,,5.97,
+26.392943001,C1,Frontend_Bound.Frontend_Latency,52.93,% Slots,,rs_events.empty_end,,5.96,
+26.392943001,C1-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,6.66,% Clocks,,,,5.72,
+26.392943001,C1-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,7.66,% Clocks,,,,5.72,
+26.392943001,C1-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,7.96,% Clocks_Calculated,,br_misp_retired.all_branches,,5.95,
+26.392943001,C1-T1,Frontend_Bound.Frontend_Latency.MS_Switches,6.96,% Clocks,,idq.ms_switches,,5.72,
+26.392943001,C1-T1,Backend_Bound.Memory_Bound.Store_Bound,21.92,% Stalls,,mem_uops_retired.all_stores:pp,,5.96,<==
+26.392943001,C2,Frontend_Bound,26.48,% Slots,,,,5.97,
+26.392943001,C2,Backend_Bound,31.83,% Slots,,,,5.97,
+26.392943001,C2,Frontend_Bound.Frontend_Latency,17.13,% Slots,,rs_events.empty_end,,5.96,
+26.392943001,C2,Backend_Bound.Memory_Bound,29.21,% Slots,,,,5.58,
+26.392943001,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,7.28,% Clocks,,,,5.72,
+26.392943001,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,62.06,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+26.392943001,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,10.53,% Clocks,,,,5.72,
+26.392943001,C2-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,9.83,% Clocks_Calculated,,br_misp_retired.all_branches,,5.95,
+26.392943001,C2-T1,Frontend_Bound.Frontend_Latency.MS_Switches,5.65,% Clocks,,idq.ms_switches,,5.71,
+26.392943001,C3,Frontend_Bound,21.33,% Slots,,,,5.97,
+26.392943001,C3,Bad_Speculation,6.89,% Slots,,,,5.97,
+26.392943001,C3,Backend_Bound,27.76,% Slots,,,,5.97,
+26.392943001,C3,Frontend_Bound.Frontend_Latency,17.07,% Slots,,rs_events.empty_end,,5.96,
+26.392943001,C3,Backend_Bound.Memory_Bound,17.87,% Slots,,,,5.59,
+26.392943001,C3-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,9.72,% Clocks,,,,5.72,
+26.392943001,C3-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,8.25,% Clocks_Calculated,,br_misp_retired.all_branches,,5.95,
+26.392943001,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,98.01,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.96,<==
+26.392943001,C3-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,9.28,% Clocks,,,,5.72,
+26.392943001,C3-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,10.43,% Clocks_Calculated,,br_misp_retired.all_branches,,5.95,
+26.392943001,C3-T1,Frontend_Bound.Frontend_Latency.MS_Switches,6.41,% Clocks,,idq.ms_switches,,5.72,
+27.4716926,C0,Frontend_Bound,23.05,% Slots,,,,5.77,
+27.4716926,C0,Bad_Speculation,6.63,% Slots,,,,5.77,
+27.4716926,C0,Backend_Bound,36.54,% Slots,,,,5.77,
+27.4716926,C0,Frontend_Bound.Frontend_Latency,19.46,% Slots,,rs_events.empty_end,,5.56,
+27.4716926,C0,Backend_Bound.Memory_Bound,37.91,% Slots,,,,5.77,
+27.4716926,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,7.25,% Clocks,,,,5.94,
+27.4716926,C0-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,8.05,% Clocks_Calculated,,br_misp_retired.all_branches,,5.56,
+27.4716926,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,66.79,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+27.4716926,C0-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,9.16,% Clocks,,,,5.94,
+27.4716926,C0-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.36,% Clocks_Calculated,,br_misp_retired.all_branches,,5.56,
+27.4716926,C1,Backend_Bound,35.22,% Slots,,,,5.77,
+27.4716926,C1,Backend_Bound.Memory_Bound,26.07,% Slots,,,,5.77,<==
+27.4716926,C2,Frontend_Bound,30.01,% Slots,,,,5.78,
+27.4716926,C2,Bad_Speculation,6.01,% Slots,,,,5.78,
+27.4716926,C2,Backend_Bound,31.07,% Slots,,,,5.78,
+27.4716926,C2,Retiring,34.19,% Slots,,,,5.78,
+27.4716926,C2,Frontend_Bound.Frontend_Latency,20.79,% Slots,,rs_events.empty_end,,5.56,
+27.4716926,C2,Frontend_Bound.Frontend_Bandwidth,11.21,% Slots,,,,5.56,
+27.4716926,C2,Backend_Bound.Memory_Bound,25.88,% Slots,,,,5.78,
+27.4716926,C2,Retiring.Microcode_Sequencer,2.63,% Slots,,idq.ms_uops,,5.59,<==
+27.4716926,C2,Frontend_Bound.Frontend_Bandwidth.MITE,24.64,% CoreClocks,This metric represents Core cycles fraction in which CPU was likely limited due to the MITE pipeline (Legacy Decode Pipeline)...,,,5.94,
+27.4716926,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,6.69,% Clocks,,,,5.94,
+27.4716926,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.56,% Clocks_Calculated,,br_misp_retired.all_branches,,5.56,
+27.4716926,C2-T0,Frontend_Bound.Frontend_Latency.MS_Switches,5.02,% Clocks,,idq.ms_switches,,5.94,
+27.4716926,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,12.63,% Clocks,,,,5.94,
+27.4716926,C3,Frontend_Bound,25.73,% Slots,,,,5.78,
+27.4716926,C3,Backend_Bound,31.99,% Slots,,,,5.78,
+27.4716926,C3,Backend_Bound.Memory_Bound,30.82,% Slots,,,,5.78,
+27.4716926,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,80.79,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.93,<==
+28.548302349,C0,Frontend_Bound,25.46,% Slots,,,,5.71,
+28.548302349,C0,Bad_Speculation,5.34,% Slots,,,,5.71,
+28.548302349,C0,Backend_Bound,38.46,% Slots,,,,5.71,
+28.548302349,C0,Retiring,26.55,% Slots,,,,5.71,
+28.548302349,C0,Frontend_Bound.Frontend_Latency,16.73,% Slots,,rs_events.empty_end,,5.95,
+28.548302349,C0,Backend_Bound.Memory_Bound,29.19,% Slots,,,,5.71,
+28.548302349,C0,Retiring.Microcode_Sequencer,1.60,% Slots,,idq.ms_uops,,5.94,
+28.548302349,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,11.40,% Clocks,,,,5.95,
+28.548302349,C0-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.46,% Clocks_Calculated,,br_misp_retired.all_branches,,5.92,
+28.548302349,C0-T0,Frontend_Bound.Frontend_Latency.MS_Switches,5.04,% Clocks,,idq.ms_switches,,5.95,
+28.548302349,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,69.88,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.95,<==
+28.548302349,C0-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,7.36,% Clocks,,,,5.95,
+28.548302349,C0-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.66,% Clocks_Calculated,,br_misp_retired.all_branches,,5.92,
+28.548302349,C1,Frontend_Bound,20.54,% Slots,,,,5.71,
+28.548302349,C1,Bad_Speculation,5.47,% Slots,,,,5.7,
+28.548302349,C1,Backend_Bound,37.51,% Slots,,,,5.7,
+28.548302349,C1,Frontend_Bound.Frontend_Latency,17.63,% Slots,,rs_events.empty_end,,5.95,
+28.548302349,C1,Backend_Bound.Memory_Bound,34.78,% Slots,,,,5.7,
+28.548302349,C1-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,6.94,% Clocks,,,,5.95,
+28.548302349,C1-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.06,% Clocks_Calculated,,br_misp_retired.all_branches,,5.91,
+28.548302349,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,96.13,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.95,<==
+28.548302349,C1-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,10.97,% Clocks,,,,5.95,
+28.548302349,C1-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.45,% Clocks_Calculated,,br_misp_retired.all_branches,,5.91,
+28.548302349,C1-T1,Frontend_Bound.Frontend_Latency.MS_Switches,5.31,% Clocks,,idq.ms_switches,,5.95,
+28.548302349,C2,Frontend_Bound,22.49,% Slots,,,,5.71,
+28.548302349,C2,Backend_Bound,29.72,% Slots,,,,5.7,
+28.548302349,C2,Backend_Bound.Memory_Bound,25.92,% Slots,,,,5.7,
+28.548302349,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,62.70,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.94,<==
+28.548302349,C3,Frontend_Bound,33.06,% Slots,,,,5.71,
+28.548302349,C3,Backend_Bound,34.09,% Slots,,,,5.7,
+28.548302349,C3,Frontend_Bound.Frontend_Latency,28.70,% Slots,,rs_events.empty_end,,5.94,
+28.548302349,C3,Backend_Bound.Memory_Bound,39.11,% Slots,,,,5.7,<==
+28.548302349,C3-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,7.81,% Clocks,,,,5.95,
+28.548302349,C3-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.29,% Clocks_Calculated,,br_misp_retired.all_branches,,5.91,
+29.623506755,C0,Frontend_Bound,26.21,% Slots,,,,5.95,
+29.623506755,C0,Backend_Bound,35.99,% Slots,,,,5.95,
+29.623506755,C0,Backend_Bound.Memory_Bound,24.34,% Slots,,,,5.95,
+29.623506755,C0,Backend_Bound.Core_Bound,11.65,% Slots,,,,5.95,
+29.623506755,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,50.73,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+29.623506755,C1,Frontend_Bound,29.46,% Slots,,,,5.96,
+29.623506755,C1,Backend_Bound,38.31,% Slots,,,,5.96,
+29.623506755,C1,Backend_Bound.Memory_Bound,34.91,% Slots,,,,5.94,
+29.623506755,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,101.29,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+29.623506755,C1-T1,Backend_Bound.Memory_Bound.Store_Bound,22.20,% Stalls,,mem_uops_retired.all_stores:pp,,5.95,<==
+29.623506755,C2,Frontend_Bound,27.53,% Slots,,,,5.96,
+29.623506755,C2,Backend_Bound,38.49,% Slots,,,,5.96,
+29.623506755,C2,Backend_Bound.Memory_Bound,36.98,% Slots,,,,5.95,<==
+29.623506755,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,79.22,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,<==
+29.623506755,C3,Frontend_Bound,30.05,% Slots,,,,5.96,
+29.623506755,C3,Backend_Bound,27.95,% Slots,,,,5.96,
+29.623506755,C3,Frontend_Bound.Frontend_Latency,15.63,% Slots,,rs_events.empty_end,,5.95,<==
+29.623506755,C3,Backend_Bound.Memory_Bound,30.75,% Slots,,,,5.94,
+29.623506755,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,47.48,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.83,
+29.623506755,C3-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,8.04,% Clocks,,,,5.95,<==
+30.693246006,C0,Frontend_Bound,21.90,% Slots,,,,5.98,
+30.693246006,C0,Backend_Bound,31.87,% Slots,,,,5.98,
+30.693246006,C0,Frontend_Bound.Frontend_Latency,18.52,% Slots,,rs_events.empty_end,,5.99,
+30.693246006,C0,Backend_Bound.Memory_Bound,30.89,% Slots,,,,5.98,<==
+30.693246006,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,8.58,% Clocks,,,,5.99,
+30.693246006,C0-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,5.14,% Clocks,,,,5.98,
+30.693246006,C1,Frontend_Bound,27.90,% Slots,,,,5.98,
+30.693246006,C1,Bad_Speculation,5.10,% Slots,,,,5.98,
+30.693246006,C1,Backend_Bound,37.70,% Slots,,,,5.98,
+30.693246006,C1,Retiring,22.15,% Slots,,,,5.98,
+30.693246006,C1,Frontend_Bound.Frontend_Latency,31.86,% Slots,,rs_events.empty_end,,6.0,
+30.693246006,C1,Backend_Bound.Memory_Bound,43.01,% Slots,,,,5.98,
+30.693246006,C1,Retiring.Microcode_Sequencer,4.06,% Slots,,idq.ms_uops,,5.99,
+30.693246006,C1-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,8.03,% Clocks,,,,5.99,
+30.693246006,C1-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,8.04,% Clocks_Calculated,,br_misp_retired.all_branches,,5.98,
+30.693246006,C1-T0,Frontend_Bound.Frontend_Latency.MS_Switches,7.20,% Clocks,,idq.ms_switches,,5.99,
+30.693246006,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,58.63,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+30.693246006,C1-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,6.95,% Clocks,,,,5.99,
+30.693246006,C1-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.77,% Clocks_Calculated,,br_misp_retired.all_branches,,5.98,
+30.693246006,C2,Frontend_Bound,20.99,% Slots,,,,5.98,
+30.693246006,C2,Bad_Speculation,4.25,% Slots,,,,5.98,
+30.693246006,C2,Backend_Bound,37.75,% Slots,,,,5.98,
+30.693246006,C2,Frontend_Bound.Frontend_Latency,19.18,% Slots,,rs_events.empty_end,,5.99,
+30.693246006,C2,Backend_Bound.Memory_Bound,48.70,% Slots,,,,5.98,
+30.693246006,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,7.73,% Clocks,,,,5.99,
+30.693246006,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,7.62,% Clocks_Calculated,,br_misp_retired.all_branches,,5.98,
+30.693246006,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,49.35,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.72,<==
+30.693246006,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,14.93,% Clocks,,,,5.99,
+30.693246006,C2-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,9.64,% Clocks_Calculated,,br_misp_retired.all_branches,,5.98,
+30.693246006,C3,Frontend_Bound,24.59,% Slots,,,,5.98,
+30.693246006,C3,Backend_Bound,36.95,% Slots,,,,5.98,
+30.693246006,C3,Frontend_Bound.Frontend_Latency,16.99,% Slots,,rs_events.empty_end,,5.99,
+30.693246006,C3,Backend_Bound.Memory_Bound,31.96,% Slots,,,,5.98,<==
+30.693246006,C3-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,6.06,% Clocks,,,,5.99,
+30.693246006,C3-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,9.92,% Clocks,,,,5.99,
+31.775454952,C0,Backend_Bound,31.04,% Slots,,,,5.91,
+31.775454952,C0,Backend_Bound.Memory_Bound,25.45,% Slots,,,,5.76,<==
+31.775454952,C1,Frontend_Bound,28.68,% Slots,,,,5.92,
+31.775454952,C1,Backend_Bound,34.23,% Slots,,,,5.92,
+31.775454952,C1,Frontend_Bound.Frontend_Latency,21.23,% Slots,,rs_events.empty_end,,5.92,
+31.775454952,C1,Backend_Bound.Memory_Bound,39.98,% Slots,,,,5.76,<==
+31.775454952,C1-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,9.56,% Clocks,,,,5.54,
+31.775454952,C1-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,14.72,% Clocks,,,,5.54,
+31.775454952,C1-T1,Frontend_Bound.Frontend_Latency.ITLB_Misses,5.11,% Clocks,This metric represents cycles fraction the CPU was stalled due to instruction TLB misses...,itlb_misses.walk_completed,,5.92,
+31.775454952,C2,Frontend_Bound,27.44,% Slots,,,,5.91,
+31.775454952,C2,Bad_Speculation,3.92,% Slots,,,,5.91,
+31.775454952,C2,Backend_Bound,32.94,% Slots,,,,5.91,
+31.775454952,C2,Frontend_Bound.Frontend_Latency,20.00,% Slots,,rs_events.empty_end,,5.91,
+31.775454952,C2,Backend_Bound.Memory_Bound,24.85,% Slots,,,,5.76,<==
+31.775454952,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,8.30,% Clocks,,,,5.54,
+31.775454952,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.61,% Clocks_Calculated,,br_misp_retired.all_branches,,5.91,
+31.775454952,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,14.07,% Clocks,,,,5.54,
+31.775454952,C2-T1,Frontend_Bound.Frontend_Latency.ITLB_Misses,5.33,% Clocks,,itlb_misses.walk_completed,,5.92,
+31.775454952,C3,Frontend_Bound,26.40,% Slots,,,,5.92,
+31.775454952,C3,Backend_Bound,30.48,% Slots,,,,5.92,
+31.775454952,C3,Backend_Bound.Memory_Bound,18.52,% Slots,,,,5.76,<==
+31.775454952,C3,Backend_Bound.Core_Bound,11.96,% Slots,,,,5.76,
+31.775454952,C3-T0,Backend_Bound.Core_Bound.Ports_Utilization,25.64,% Clocks,,,,5.91,
+32.847170346,C0,Frontend_Bound,21.66,% Slots,,,,5.98,
+32.847170346,C0,Backend_Bound,33.42,% Slots,,,,5.98,
+32.847170346,C0,Backend_Bound.Memory_Bound,28.37,% Slots,,,,5.6,
+32.847170346,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,88.42,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.97,<==
+32.847170346,C1,Frontend_Bound,27.24,% Slots,,,,5.98,
+32.847170346,C1,Bad_Speculation,6.16,% Slots,,,,5.98,
+32.847170346,C1,Backend_Bound,35.23,% Slots,,,,5.98,
+32.847170346,C1,Frontend_Bound.Frontend_Latency,19.77,% Slots,,rs_events.empty_end,,5.78,
+32.847170346,C1,Backend_Bound.Memory_Bound,44.39,% Slots,,,,5.6,
+32.847170346,C1-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.36,% Clocks_Calculated,,br_misp_retired.all_branches,,5.79,
+32.847170346,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,45.65,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.97,<==
+32.847170346,C1-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,14.51,% Clocks,,,,5.97,
+32.847170346,C1-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,7.74,% Clocks_Calculated,,br_misp_retired.all_branches,,5.79,
+32.847170346,C2,Frontend_Bound,25.62,% Slots,,,,5.98,
+32.847170346,C2,Bad_Speculation,4.66,% Slots,,,,5.98,
+32.847170346,C2,Backend_Bound,32.84,% Slots,,,,5.98,
+32.847170346,C2,Frontend_Bound.Frontend_Latency,17.26,% Slots,,rs_events.empty_end,,5.78,
+32.847170346,C2,Backend_Bound.Memory_Bound,54.78,% Slots,,,,5.6,<==
+32.847170346,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,8.60,% Clocks,,,,5.97,
+32.847170346,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.42,% Clocks_Calculated,,br_misp_retired.all_branches,,5.79,
+32.847170346,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,5.74,% Clocks,,,,5.97,
+32.847170346,C3,Frontend_Bound,21.29,% Slots,,,,5.98,
+32.847170346,C3,Backend_Bound,33.44,% Slots,,,,5.98,
+32.847170346,C3,Backend_Bound.Memory_Bound,28.76,% Slots,,,,5.6,
+32.847170346,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,81.78,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.97,<==
+33.901560661,C0,Frontend_Bound,31.63,% Slots,,,,5.69,
+33.901560661,C0,Backend_Bound,41.98,% Slots,,,,5.69,
+33.901560661,C0,Frontend_Bound.Frontend_Latency,24.26,% Slots,,rs_events.empty_end,,5.86,
+33.901560661,C0,Backend_Bound.Memory_Bound,40.34,% Slots,,,,5.69,<==
+33.901560661,C0-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,10.83,% Clocks,,,,6.07,
+33.901560661,C0-T1,Backend_Bound.Memory_Bound.Store_Bound,21.59,% Stalls,,mem_uops_retired.all_stores:pp,,6.08,<==
+33.901560661,C1,Frontend_Bound,21.44,% Slots,,,,5.69,
+33.901560661,C1,Backend_Bound,26.91,% Slots,,,,5.69,
+33.901560661,C1,Backend_Bound.Memory_Bound,60.74,% Slots,,,,5.69,<==
+33.901560661,C2,Frontend_Bound,33.83,% Slots,,,,5.69,
+33.901560661,C2,Bad_Speculation,4.97,% Slots,,,,5.69,
+33.901560661,C2,Backend_Bound,47.52,% Slots,,,,5.69,
+33.901560661,C2,Retiring,14.08,% Slots,,,,5.69,
+33.901560661,C2,Frontend_Bound.Frontend_Latency,48.55,% Slots,,rs_events.empty_end,,5.86,
+33.901560661,C2,Backend_Bound.Memory_Bound,54.05,% Slots,,,,5.69,
+33.901560661,C2,Retiring.Microcode_Sequencer,2.55,% Slots,,idq.ms_uops,,6.07,
+33.901560661,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,13.39,% Clocks,,,,6.07,
+33.901560661,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,6.65,% Clocks_Calculated,,br_misp_retired.all_branches,,5.69,
+33.901560661,C2-T0,Frontend_Bound.Frontend_Latency.MS_Switches,7.23,% Clocks,,idq.ms_switches,,6.07,
+33.901560661,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,56.57,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.7,<==
+33.901560661,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,10.98,% Clocks,,,,6.07,
+33.901560661,C3,Backend_Bound,34.74,% Slots,,,,5.69,
+33.901560661,C3,Backend_Bound.Memory_Bound,35.90,% Slots,,,,5.69,<==
+34.95389686,C0,Backend_Bound,39.57,% Slots,,,,6.08,
+34.95389686,C0,Backend_Bound.Memory_Bound,35.58,% Slots,,,,5.7,
+34.95389686,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,67.31,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.09,<==
+34.95389686,C0-T1,Backend_Bound.Memory_Bound.Store_Bound,23.87,% Stalls,,mem_uops_retired.all_stores:pp,,5.71,<==
+34.95389686,C1,Frontend_Bound,24.54,% Slots,,,,6.08,
+34.95389686,C1,Backend_Bound,44.44,% Slots,,,,6.08,
+34.95389686,C1,Frontend_Bound.Frontend_Latency,39.89,% Slots,,rs_events.empty_end,,5.76,
+34.95389686,C1,Backend_Bound.Memory_Bound,57.03,% Slots,,,,5.7,<==
+34.95389686,C1-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,12.99,% Clocks,,,,5.7,
+34.95389686,C1-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,5.35,% Clocks_Calculated,,br_misp_retired.all_branches,,5.77,
+34.95389686,C2,Frontend_Bound,21.42,% Slots,,,,6.08,
+34.95389686,C2,Bad_Speculation,8.42,% Slots,,,,6.08,
+34.95389686,C2,Backend_Bound,33.47,% Slots,,,,6.08,
+34.95389686,C2,Frontend_Bound.Frontend_Latency,21.60,% Slots,,rs_events.empty_end,,5.76,
+34.95389686,C2,Backend_Bound.Memory_Bound,37.95,% Slots,,,,5.7,<==
+34.95389686,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,9.31,% Clocks_Calculated,,br_misp_retired.all_branches,,5.77,
+34.95389686,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,9.76,% Clocks,,,,5.7,
+34.95389686,C2-T1,Backend_Bound.Memory_Bound.L1_Bound,100.00,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.08,<==
+34.95389686,C3,Backend_Bound,29.18,% Slots,,,,6.08,
+34.95389686,C3,Backend_Bound.Memory_Bound,28.54,% Slots,,,,5.69,
+34.95389686,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,38.15,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,6.08,<==
+36.008915478,C0,Frontend_Bound,26.51,% Slots,,,,5.69,
+36.008915478,C0,Backend_Bound,30.66,% Slots,,,,5.69,
+36.008915478,C0,Backend_Bound.Memory_Bound,28.10,% Slots,,,,5.69,<==
+36.008915478,C1,Frontend_Bound,32.38,% Slots,,,,5.69,
+36.008915478,C1,Backend_Bound,20.73,% Slots,,,,5.69,
+36.008915478,C1,Frontend_Bound.Frontend_Bandwidth,16.81,% Slots,,,,5.98,
+36.008915478,C1,Backend_Bound.Memory_Bound,18.80,% Slots,,,,5.69,
+36.008915478,C1,Frontend_Bound.Frontend_Bandwidth.MITE,34.80,% CoreClocks,,,,6.07,<==
+36.008915478,C1-T0,Backend_Bound.Memory_Bound.L1_Bound,40.23,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.68,
+36.008915478,C2,Backend_Bound,41.09,% Slots,,,,5.7,
+36.008915478,C2,Backend_Bound.Memory_Bound,33.78,% Slots,,,,5.7,<==
+36.008915478,C3,Frontend_Bound,24.79,% Slots,,,,5.69,
+36.008915478,C3,Bad_Speculation,3.46,% Slots,,,,5.69,
+36.008915478,C3,Backend_Bound,41.30,% Slots,,,,5.69,
+36.008915478,C3,Frontend_Bound.Frontend_Latency,45.20,% Slots,,rs_events.empty_end,,5.98,
+36.008915478,C3,Backend_Bound.Memory_Bound,40.73,% Slots,,,,5.69,
+36.008915478,C3-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,11.21,% Clocks_Calculated,,br_misp_retired.all_branches,,5.69,
+36.008915478,C3-T0,Backend_Bound.Memory_Bound.L1_Bound,55.83,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,5.68,<==
+36.008915478,C3-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,12.61,% Clocks,,,,6.07,
+36.294372426,C0,Frontend_Bound,43.82,% Slots,,,,5.61,
+36.294372426,C0,Backend_Bound,40.02,% Slots,,,,5.61,
+36.294372426,C0,Retiring,38.54,% Slots,,,,5.61,
+36.294372426,C0,Frontend_Bound.Frontend_Latency,24.30,% Slots,,rs_events.empty_end,,5.6,
+36.294372426,C0,Backend_Bound.Memory_Bound,30.61,% Slots,,,,5.61,
+36.294372426,C0,Retiring.Microcode_Sequencer,4.16,% Slots,,idq.ms_uops,,5.61,
+36.294372426,C0-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,19.84,% Clocks,,,,5.6,<==
+36.294372426,C0-T0,Frontend_Bound.Frontend_Latency.MS_Switches,7.56,% Clocks,,idq.ms_switches,,5.6,
+36.294372426,C0-T0,Backend_Bound.Memory_Bound.L1_Bound,49.11,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,7.01,
+36.294372426,C0-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,17.88,% Clocks,,,,5.6,
+36.294372426,C0-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,18.35,% Clocks_Calculated,,br_misp_retired.all_branches,,5.6,
+36.294372426,C0-T1,Backend_Bound.Memory_Bound.Store_Bound,20.30,% Stalls,,mem_uops_retired.all_stores:pp,,5.61,
+36.294372426,C1,Frontend_Bound,34.32,% Slots,,,,5.61,
+36.294372426,C1,Frontend_Bound.Frontend_Bandwidth,20.74,% Slots,,,,5.61,
+36.294372426,C1,Frontend_Bound.Frontend_Bandwidth.MITE,28.76,% CoreClocks,,,,5.61,<==
+36.294372426,C2,Frontend_Bound,45.60,% Slots,,,,5.61,
+36.294372426,C2,Bad_Speculation,5.45,% Slots,,,,5.61,
+36.294372426,C2,Backend_Bound,38.76,% Slots,,,,5.61,
+36.294372426,C2,Frontend_Bound.Frontend_Latency,63.82,% Slots,,rs_events.empty_end,,5.6,
+36.294372426,C2-T0,Frontend_Bound.Frontend_Latency.ICache_Misses,15.13,% Clocks,,,,5.6,
+36.294372426,C2-T0,Frontend_Bound.Frontend_Latency.Branch_Resteers,26.12,% Clocks_Calculated,,br_misp_retired.all_branches,,5.6,<==
+36.294372426,C2-T0,Backend_Bound.Memory_Bound.L1_Bound,68.19,% Stalls,,mem_load_uops_retired.l1_hit:pp mem_load_uops_retired.hit_lfb:pp,,7.01,
+36.294372426,C2-T1,Frontend_Bound.Frontend_Latency.ICache_Misses,20.04,% Clocks,,,,5.6,<==
+36.294372426,C2-T1,Frontend_Bound.Frontend_Latency.ITLB_Misses,7.77,% Clocks,,itlb_misses.walk_completed,,5.6,
+36.294372426,C2-T1,Frontend_Bound.Frontend_Latency.Branch_Resteers,13.22,% Clocks_Calculated,,br_misp_retired.all_branches,,5.6,
+36.294372426,C3,Frontend_Bound,27.75,% Slots,,,,5.61,
+36.294372426,C3,Backend_Bound,20.20,% Slots,,,,5.61,
+36.294372426,C3,Frontend_Bound.Frontend_Bandwidth,10.96,% Slots,,,,5.6,
+36.294372426,C3,Backend_Bound.Memory_Bound,14.64,% Slots,,,,5.61,
+36.294372426,C3,Frontend_Bound.Frontend_Bandwidth.MITE,20.53,% CoreClocks,,,,5.62,<==
