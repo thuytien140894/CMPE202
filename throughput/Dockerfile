@@ -50,4 +50,8 @@ RUN head -c300k data/fil9 > data/18B.test
 
 ADD tl-barplot.py /pmu-tools/tl-barplot.py
 
-RUN mkdir plot
+RUN mkdir 5Tplot
+RUN mkdir 1243Bplot
+RUN mkdir 310Bplot
+RUN mkdir 75Bplot
+RUN mkdir 18Bplot
