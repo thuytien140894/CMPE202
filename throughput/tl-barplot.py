@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+#
+# https://github.com/andikleen/pmu-tools
+#
 # plot toplev -I... -x, -o ...csv output as bar plot
 #
 import matplotlib
