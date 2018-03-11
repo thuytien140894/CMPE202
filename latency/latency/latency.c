@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
     FILE *test;
 
     if (record) {
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 40; i++) {
             sprintf(filename, "data/test%d.txt", i);
             if (fopen(filename, "r") == NULL) {
                 exit(0);
