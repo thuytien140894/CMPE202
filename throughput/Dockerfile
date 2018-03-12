@@ -54,4 +54,4 @@ RUN mkdir 5Tplot
 RUN mkdir 1243Bplot
 RUN mkdir 310Bplot
 RUN mkdir 75Bplot
-RUN mkdir 18Bplot
+RUN mkdir 20Bplot
